@@ -303,8 +303,19 @@ college_recent_grads %>%
 ## What types of majors do women tend to major in?
 
 9.  Create a scatterplot of median income vs. proportion of women in that major, coloured by whether the major is in a STEM field or not. Describe the association between these three variables.
+```{r}
+
+
+
+ggplot(college_recent_grads, aes(median, sharewomen, color = major_type)) +
+  geom_point()
+
+```
+This shows that women tend to major in non-stem fields, but women in stem fields make more money.
+
 
 ## Further exploration
+
 
 10. Ask a question of interest to you, and answer it using summary statistic(s) and/or visualization(s).
 
